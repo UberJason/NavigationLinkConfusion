@@ -71,3 +71,5 @@ struct DetailView: View {
 ````
 
 When the Refresh button on the DetailView is tapped, the model in the root ContentView refreshes its own `Plan` object with an exact copy of the object. On iOS 14 and Xcode 12.5, this would cause nothing to happen - the identity of the `Plan` object was unchanged, so the navigation stack is unchanged. However, on iOS 15 and Xcode 13, this causes the navigation stack to pop to root.
+
+![Recording](https://github.com/UberJason/NavigationLinkConfusion/blob/main/Recording.gif)
